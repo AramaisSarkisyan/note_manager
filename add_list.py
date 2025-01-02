@@ -1,7 +1,8 @@
-from add_input import (
-    username, content, status, created_date, issue_date)
-
-username, content, status, created_date, issue_date
+username = input("Введите имя пользователя: ")
+content = input("Введите описание заметки: ")
+status = input("Введите статус заметки (например, 'Активна', 'Выполнена'): ")
+created_date = input("Введите дату создания заметки в формате 'день-месян-год': ")
+issue_date = input("Введите дату истечения заметки в формате 'день-месяц-год': ")
 
 titles = []
 for i in range(3):
