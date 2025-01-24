@@ -30,3 +30,5 @@ multiple_notes.py
 delete_note.py
 Программа удаляет ненужные заметки из списка
 
+create_note_function.py
+Создание функции def для создания заметок
