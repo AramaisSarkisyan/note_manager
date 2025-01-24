@@ -32,3 +32,6 @@ delete_note.py
 
 create_note_function.py
 Создание функции def для создания заметок
+
+update_note_function.py
+Создание функции для изменения заметок
