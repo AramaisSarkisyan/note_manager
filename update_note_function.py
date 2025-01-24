@@ -50,23 +50,23 @@ def update_note(note_):
                 print(f"\nТекущий статус заметки: ", note_['status'])
                 print("\nВыберите новый статус заметки: ",
                       "1. новая", "2. в процессе", "3. завершена", sep='\n')
-                new_content = input("Ваш выбор: ").strip().lower()
+                new_status = input("Ваш выбор: ").strip().lower()
 
-                if new_content == "1" or new_content == "новая":
+                if new_status == "1" or new_status == "новая":
                     note_['status'] = "новая"
                     break
-                elif new_content == "2" or new_content == "в процессе":
+                elif new_status == "2" or new_status == "в процессе":
                     note_['status'] = "в процессе"
                     break
-                elif new_content == "3" or new_content == "завершена":
+                elif new_status == "3" or new_status == "завершена":
                     note_['status'] = "завершена"
                     break
 
-                while new_content not in ('1', 'новая', '2', 'в процессе', '3', 'завершена'):
+                while new_status not in ('1', 'новая', '2', 'в процессе', '3', 'завершена'):
                     print("\nДанные введены неверно")
                     print("\nВыберите новый статус заметки: ",
                           "1. выполнена", "2. в процессе", "3. завершена", sep='\n')
-                    new_content = input("Ваш выбор: ").strip().lower()
+                    new_status = input("Ваш выбор: ").strip().lower()
         elif update == 'дату дедлайна':
             new_issue_date = input("Введите новую дату дедлайна в формате (день-месяц-год): ").strip()
             if not new_issue_date:
