@@ -58,7 +58,7 @@ def create_note():
         break
 
     # Добавляем полученные данные в словарь
-    note = {
+    note_ = {
         'username': username,
         'title': title,
         'content': content,
@@ -70,14 +70,14 @@ def create_note():
     print("\nЗаметка успешно создана.")
 
     # Получаем готовый словарь
-    return note
+    return note_
 
 
 if __name__ == '__main__':
-    note = create_note()
-    print(f"\nИмя пользователя: {note['username']}")
-    print(f"Заголовок: {note['title']}")
-    print(f"Описание заметки: {note['content']}")
-    print(f"Статус заметки: {note['status']}")
-    print(f"Дата создания заметки: {note['created_date']}")
-    print(f"Дата дедлайна: {note['issue_date']}")
+    note_ = create_note()
+    print(f"\nИмя пользователя: {note_['username']}")
+    print(f"Заголовок: {note_['title']}")
+    print(f"Описание заметки: {note_['content']}")
+    print(f"Статус заметки: {note_['status']}")
+    print(f"Дата создания заметки: {note_['created_date']}")
+    print(f"Дата дедлайна: {note_['issue_date']}")
