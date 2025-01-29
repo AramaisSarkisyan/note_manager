@@ -35,3 +35,6 @@ create_note_function.py
 
 update_note_function.py
 Создание функции для изменения заметок
+
+display_notes_function.py
+Создание функции для просмотра созданных заметок
